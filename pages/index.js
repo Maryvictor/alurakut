@@ -30,7 +30,7 @@ function ProfileSidebar(propriedades) {
 export default function Home() {
   
   const [comunidades, setComunidades] = React.useState([{
-    id: '3444444444444444444444444',
+    // id: '3444444444444444444444444',
     title: 'Nós amamos o Júnior',
     image: 'https://media-exp1.licdn.com/dms/image/C4D03AQH3w8MI8qTDhw/profile-displayphoto-shrink_800_800/0/1594315043715?e=1631750400&v=beta&t=s8Qsub3dPTQ2wsgVIYufRXOJLfrh592EDUyY3-qIA_4'
 
@@ -133,7 +133,8 @@ export default function Home() {
             <ul>
               {comunidades.map((itemAtual) => {
                 return (
-                  <li> key={itemAtual.id}
+                  // <li> key={itemAtual.id}
+                  <li>
                     <a href={`/users/${itemAtual.title}`} >
                        <img src={itemAtual.image} /> 
                        
